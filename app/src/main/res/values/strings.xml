@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Poke API</string>
+    <string name="avatar">avatar</string>
+    <string name="progress_value">%d</string>
+    <string name="weight_value">%s KG</string>
+    <string name="height_value">%s metros</string>
+    <string name="number">№ %s</string>
+    <string name="speed_label">Velocidad</string>
+    <string name="sd_label">SD</string>
+    <string name="sa_label">SA</string>
+    <string name="defense_label">Defensa</string>
+    <string name="attack_label">Ataque</string>
+    <string name="hp_label">HP</string>
+    <string name="stats_label">Estadisticas</string>
+    <string name="empty_label">-</string>
+    <string name="height_label">Altura</string>
+    <string name="weight_label">Peso</string>
+    <string name="retry_label">Retry</string>
+</resources>
+
