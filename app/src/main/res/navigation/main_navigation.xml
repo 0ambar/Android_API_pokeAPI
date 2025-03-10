@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/pokeFragment"
         android:name="ru.lorderi.pokeapi.ui.fragment.PokeFragment"
-        android:label="Poke API - DaniV"
+        android:label="Poke API"
         tools:layout="@layout/fragment_poke">
         <action
             android:id="@+id/action_pokeFragment_to_pokeDescriptionFragment"

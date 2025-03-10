@@ -1,61 +1,64 @@
-# PokeApi by DaniVegaM
+### Resumen de la Aplicación de Pokémon en Kotlin
 
-Esta es una aplicación desarrollada en **Kotlin** que consume la [PokeAPI](https://pokeapi.co) para listar y mostrar detalles de los Pokémon. La app implementa dos pantallas principales:
-- **Pantalla principal**: Muestra una lista de todos los pokemones.
-- **Pantalla de detalles**: Al seleccionar un Pokémon, se muestra información detallada y estadísticas sobre el mismo.
+Esta aplicación, desarrollada en **Kotlin**, consume la [PokeAPI](https://pokeapi.co) para listar y mostrar detalles de Pokémon. Está estructurada en dos pantallas principales:
 
-La aplicación utiliza principalmente las siguiente librerias:
-- **Kotlin**
-- **MVVM (Model-View-ViewModel)**
-- **ViewBinding**
-- **Navigation Component**
-- **Retrofit y OkHttp** (para las llamadas a la API)
-- **Coroutines** (para el manejo de operaciones asíncronas)
-- **Paging 3** (para la paginación de datos)
-- **Dagger Hilt** (para la inyección de dependencias)
+1. **Pantalla principal**: Muestra una lista de todos los Pokémon.
+2. **Pantalla de detalles**: Al seleccionar un Pokémon, se muestra información detallada y sus estadísticas.
 
-## Estructura del Proyecto
+---
 
-A continuación, se detalla la función de cada carpeta y parte del código:
+### Tecnologías y Librerías Utilizadas
+- **Kotlin**: Lenguaje de programación principal.
+- **MVVM (Model-View-ViewModel)**: Arquitectura para separar la lógica de la interfaz de usuario.
+- **ViewBinding**: Para vincular vistas de manera segura.
+- **Navigation Component**: Gestiona la navegación entre pantallas.
+- **Retrofit y OkHttp**: Para realizar llamadas a la API.
+- **Coroutines**: Manejo de operaciones asíncronas.
+- **Paging 3**: Paginación de datos para la lista de Pokémon.
+- **Dagger Hilt**: Inyección de dependencias.
 
-### Carpeta `app`
-Contiene todo el código fuente y recursos de la aplicación Android.
+---
+
+### Estructura del Proyecto
+
+#### Carpeta `app`
+Contiene el código fuente y recursos de la aplicación.
 
 - **src/main**:
-    - **AndroidManifest.xml**: Archivo de configuración esencial que declara componentes de la aplicación (actividades, servicios, etc.) y permisos.
-    - **java/**:  
-      Aquí se encuentra el código Kotlin organizado en diferentes paquetes, que podrían incluir:
-        - **UI**: Actividades y fragmentos que implementan las pantallas de la aplicación, como la lista de Pokémon y la pantalla de detalles.
-        - **ViewModel**: Clases que gestionan la lógica de presentación y actúan de intermediarias entre la UI y la capa de datos.
-        - **Repository**: Encargado de manejar la lógica de acceso a datos, incluyendo la comunicación con la PokeAPI.
-        - **Models**: Clases de datos que representan los Pokémon y sus estadísticas.
-        - **Networking**: Configuración de Retrofit, OkHttp y servicios necesarios para realizar las peticiones a la API.
-    - **res/**:  
-      Contiene todos los recursos de la aplicación, como:
-        - **layout/**: Archivos XML que definen la estructura de las interfaces de usuario para cada pantalla.
-        - **values/**: Archivos de recursos que incluyen cadenas, colores, estilos, dimensiones, etc.
-        - **drawable/**: Imágenes, íconos y otros recursos gráficos usados en la app.
+  - **AndroidManifest.xml**: Configuración esencial de la aplicación.
+  - **java/**: Código Kotlin organizado en paquetes:
+    - **UI**: Actividades y fragmentos para las pantallas.
+    - **ViewModel**: Lógica de presentación.
+    - **Repository**: Acceso a datos y comunicación con la API.
+    - **Models**: Clases de datos para Pokémon y estadísticas.
+    - **Networking**: Configuración de Retrofit y servicios API.
+  - **res/**: Recursos de la aplicación:
+    - **layout/**: Archivos XML para las interfaces de usuario.
+    - **values/**: Cadenas, colores, estilos, etc.
+    - **drawable/**: Imágenes y recursos gráficos.
 
-### Carpeta `gradle`
-Incluye archivos y scripts relacionados con la configuración y el wrapper de Gradle, necesarios para compilar el proyecto de manera consistente en diferentes entornos.
+#### Carpeta `gradle`
+Contiene scripts y configuración de Gradle para compilar el proyecto.
 
-### Carpeta `previews`
-Contiene imágenes o archivos de previsualización que pueden utilizarse para mostrar capturas de pantalla o vistas previas del diseño de la aplicación.
+#### Carpeta `previews`
+Incluye imágenes o archivos de previsualización de la aplicación.
 
-## Requisitos Previos
+---
 
-Antes de ejecutar el proyecto, asegúrate de contar con lo siguiente:
+### Requisitos Previos
+- **Android Studio** (versión Arctic Fox o superior).
+- **JDK 11** o superior.
+- **Gradle** (administrado por Android Studio).
+- **Conexión a Internet** (para descargar dependencias y obtener datos de la API).
 
-- **Android Studio** (versión recomendada: Arctic Fox o superior)
-- **JDK 11** o superior
-- **Gradle** (Android Studio lo administra automáticamente)
-- **Conexión a Internet** (para descargar las dependencias y obtener datos de la API)
+---
 
-## Pasos para ejecutar el proyecto
-
-1. Clonar este repositorio en tu máquina local. (Puedes usar el comando `git clone` para esto)
-2. Abrir este proyecto con Android Studio y te pedira descargar y sicronizar el proyecto con las dependencias necesarias
-3. Una vez aceptadas las dependencias y tu proyecto sincronizado, puedes dar click en el boton de `PLAY` para que pueda empezar la simulación del proyecto en tu maquina local
-4. Disfruta de esta APP que consume la PokeAPI :]
-
-
+### Pasos para Ejecutar el Proyecto
+1. Clona el repositorio en tu máquina local:
+   ```bash
+   git clone <URL-del-repositorio>
+   ```
+2. Abre el proyecto en **Android Studio**.
+3. Sincroniza el proyecto para descargar las dependencias necesarias.
+4. Haz clic en el botón **PLAY** para ejecutar la aplicación en un emulador o dispositivo físico.
+5. ¡Disfruta de la aplicación que consume la PokeAPI! 😊
